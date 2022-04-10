@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Salsa&display=swap");
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --nav--color: #727272;
+  --progress--color--1: #ed8911;
+  --progress--color--2: #8d11ed;
+  --progress--color--3: #11d3ee;
+  --primary--color: #000000;
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "Salsa", cursive;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 1rem 12rem;
+  background-color: #f2f3f7;
+}
+
+header {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* padding-left: 2rem; */
+  border-bottom: 2px solid #cccaca;
+}
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo span {
+  color: var(--primary--color);
+  font-weight: 700;
+  font-size: 25px;
+  font-family: var(--font-family-2);
+}
+nav {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+ul li {
+  text-transform: capitalize;
+  font-weight: normal;
+  color: var(--nav--color);
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+main {
+  padding: 6rem 0 0 0;
+  height: 100%;
+}
+
+.main--title {
+  width: 100%;
+  line-height: 60px;
+}
+
+.main--title h3 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-family: var(--font-family-2);
+}
+
+.main--title p {
+  font-size: 18px;
+  color: var(--nav--color);
+  /* font-weight: 600; */
+}
+.main--title p::first-letter {
+  text-transform: uppercase;
+}
+
+section {
+  /* border: 2px solid red; */
+  padding: 3rem 0 0 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.article--1 {
+  padding: 1rem 0;
+}
+.calc-mortgage {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  grid-auto-rows: minmax(70px, auto);
+}
+
+.col {
+  width: 280px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  color: var(--nav--color);
+}
+.col--1 {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding-left: 1.5rem;
+}
+
+.col--1 .icon {
+  font-size: 17px;
+  color: var(--nav--color);
+}
+.icon::before {
+  content: "\e1f6";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  font-variant: normal;
+  margin-right: 1rem;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: var(--primary--color);
+}
+
+.col--2 {
+  width: 280px;
+  height: 60px;
+}
+
+.col--2 label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding-left: 1.5rem;
+}
+
+.col--2 label::before {
+  content: "\f017";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  font-variant: normal;
+  font-weight: 900;
+  top: 21.5px;
+  left: 20px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: var(--primary--color);
+}
+.col--2 label::after {
+  content: "";
+  position: absolute;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #000000;
+  top: 28px;
+  right: 20px;
+}
+
+.col--2 label select {
+  display: inline-block;
+  font-size: 17px;
+  color: var(--nav--color);
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  letter-spacing: 1.5px;
+  font-family: var(--font-family-1);
+  background-color: transparent;
+  margin-left: 2rem;
+}
+
+.col--3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+}
+.icon--2 i {
+  color: var(--primary--color);
+}
+.col--3 .icon--2 span::before {
+  content: "\e1f6";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  font-variant: normal;
+  margin-right: 8px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* color:var(--primary--color) */
+}
+.col--4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 0.8rem;
+}
+.col--5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+}
+.col--5 .icon--2 span::before {
+  content: "\e1f6";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  font-variant: normal;
+  margin-right: 8px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.article--1 .btn {
+  width: 100%;
+  /* border: 2px solid green; */
+  height: auto;
+  padding-top: 1rem;
+}
+
+.btn button {
+  text-transform: capitalize;
+  font-family: var(--font-family-2);
+  background-color: var(--primary--color);
+  color: #fff;
+  text-align: center;
+  padding-block: 1.2rem;
+  border: 0;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mortgage--result {
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.mortgage--result .result {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 400px;
+  height: 120px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: var(--primary--color);
+  padding-block: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.result span {
+  font-family: var(--font-family-1);
+  font-size: 11px;
+}
+.result h3 {
+  font-family: var(--font-family-2);
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.total--amount {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.total--amount p {
+  padding: 0.5rem;
+  line-height: 15px;
+  font-size: 12px;
+  /* border: 2px solid green; */
+  transform: translate(0px, 20px);
+}
+.total--amount p span {
+  margin-left: -15px;
+}
+.total--amount p::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--nav--color);
+  height: 80%;
+  right: 30%;
+  bottom: 0;
+  transform: rotate(10deg) translate(-30px, 0px);
+}
+.progress {
+  position: relative;
+  width: 400px;
+  /* border: 2px solid green; */
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: var(--progress--color--3);
+}
+
+.progress::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--progress--color--1);
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.progress::after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--progress--color--2);
+  width: 30%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.progress--points {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  font-size: 14px;
+  color: var(--nav--color);
+  gap: 6rem;
+}
+
+.insurance {
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.insurance::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background-color: var(--progress--color--1);
+  border-radius: 100%;
+  transform: translate(-5px, 2px);
+}
+
+.insurance:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 41%;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background-color: var(--progress--color--3);
+  border-radius: 100%;
+  transform: translate(-2px, 2px);
+}
+.insurance:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: 85%;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background-color: var(--progress--color--2);
+  border-radius: 100%;
+  transform: translate(5px, 2px);
+}
+.insurance p:last-child {
+  color: var(--primary--color);
+  font-weight: 600;
+}

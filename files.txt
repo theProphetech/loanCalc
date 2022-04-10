@@ -1,0 +1,10 @@
+#000000
+rgb(0, 0, 0)
+#ed8911
+rgb(237, 137, 17)
+#8d11ed
+rgb(141, 17, 237)
+#11d3ee
+
+font-family: 'Inter', sans-serif;
+font-family: 'Salsa', cursive;

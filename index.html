@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOAN CACL</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/598e797b2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span>RealEstate Bro</span>
+      </div>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>rent</li>
+          <li>sell</li>
+          <li>about us</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main--title">
+        <h3>mortgage calculator</h3>
+        <p>this calculator helps you calculate your debt</p>
+      </div>
+      <section>
+        <article class="article--1">
+          <div class="calc-mortgage">
+            <div class="col col--1">
+              <div class="icon">Home Price</div>
+            </div>
+            <div class="col col--2">
+              <label for="time">
+                <select name="time" id="duration">
+                  <option value="" class="option">for how long?</option>
+                </select>
+              </label>
+            </div>
+            <div class="col col--3">
+              <p>Downtime payment</p>
+              <div class="icon--2">
+                <span></span>
+                <i class="fa-solid fa-percent"></i>
+              </div>
+            </div>
+            <div class="col col--4">
+              <p>Interest rate</p>
+              <div class="icon--3">
+                <i class="fa-solid fa-percent"></i>
+              </div>
+            </div>
+            <div class="col col--5">
+              <p>Property taxes/year</p>
+              <div class="icon--2">
+                <span></span>
+                <i class="fa-solid fa-percent"></i>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button>calculate mortgage</button>
+          </div>
+        </article>
+        <div class="mortgage--result">
+          <div class="result">
+            <span>Mortgage result</span>
+            <div class="total--amount">
+              <h3>N1,000,000</h3>
+              <p>
+                <span>Per<br />month</span>
+              </p>
+            </div>
+          </div>
+          <div class="progress"></div>
+          <div class="progress--points">
+            <div class="insurance">
+              <p>Insurance</p>
+              <p>NaN</p>
+            </div>
+            <div class="insurance insurance--2">
+              <p>Insurance</p>
+              <p>NaN</p>
+            </div>
+            <div class="insurance">
+              <p>P&I</p>
+              <p>NaN</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
